@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.19.0
+pandas>=1.1.0
+xlwings>=0.24.0
+PyQt5>=5.15.0
+QuantLib-Python>=1.26
+
+# Development dependencies
+pytest>=6.0.0
+pytest-cov>=2.10.0
+build>=0.7.0
+twine>=3.4.0

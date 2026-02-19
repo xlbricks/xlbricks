@@ -1,0 +1,11 @@
+# Include documentation and license files
+include README.md
+include LICENSE
+
+# Include configuration template
+include xlbricks/xlbricks.json
+
+# Exclude test files from distribution
+recursive-exclude xlbricks/tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

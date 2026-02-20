@@ -40,9 +40,9 @@ setup(
     install_requires=[
         'numpy>=1.23.0',
         'pandas>=1.5.0',
-        'xlwings>=0.28.0',
+        'xlwings==0.33.2',
         'PyQt5>=5.15.0',
-        'QuantLib-Python>=1.28',
+        'QuantLib-Python>=1.18',
     ],
     extras_require={
         'dev': [
@@ -56,8 +56,8 @@ setup(
         'xlbricks': [
             'xlbricks.json',
             'xlbricks.xlam',
-            'xlwings32-0.11.7.dll',
-            'xlwings64-0.11.7.dll',
+            'xlwings32-0.33.20.dll',
+            'xlwings64-0.33.20.dll',
             'imgs/*.png',
         ],
     },

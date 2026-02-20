@@ -2,10 +2,17 @@
 include README.md
 include LICENSE
 
-# Include configuration template
+# Include configuration template and Excel add-in files
 include xlbricks/xlbricks.json
+include xlbricks/xlbricks.xlam
+include xlbricks/xlwings32-0.11.7.dll
+include xlbricks/xlwings64-0.11.7.dll
 
-# Exclude test files from distribution
+# Include image resources
+recursive-include xlbricks/imgs *.png
+
+# Exclude test files and temporary files from distribution
 recursive-exclude xlbricks/tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
+exclude xlbricks/~$*

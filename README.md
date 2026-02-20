@@ -31,7 +31,7 @@ pip install xlbricks
 
 ### Requirements
 
-- Python 3.7 or higher
+- Python 3.11 or higher
 - Microsoft Excel (for xlwings integration)
 - Windows operating system (required for xlwings Excel integration)
 

@@ -1,9 +1,9 @@
-# Core dependencies
-numpy>=1.19.0
-pandas>=1.1.0
-xlwings>=0.24.0
+# Core dependencies (Python 3.11+ required)
+numpy>=1.23.0
+pandas>=1.5.0
+xlwings>=0.28.0
 PyQt5>=5.15.0
-QuantLib-Python>=1.26
+QuantLib-Python>=1.28
 
 # Development dependencies
 pytest>=6.0.0

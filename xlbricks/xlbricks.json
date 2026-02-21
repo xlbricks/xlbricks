@@ -1,6 +1,6 @@
 {
   "APPS_PATH": "C:\\path\\to\\your\\xlbricks\\applications",
-  "INTERPRETER": "C:\\path\\to\\your\\pythonw.exe",
+  "INTERPRETER": "",
   "PYTHONPATH": "C:\\path\\to\\your\\python\\models;C:\\another\\custom\\python\\library",
   "CONTEXT": {
     "PythonFunctions": "myapp.python_function.context"

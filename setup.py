@@ -4,6 +4,7 @@ Setup configuration for xlbricks package.
 
 from setuptools import setup, find_packages
 import os
+import re
 
 # Read the long description from README
 here = os.path.abspath(os.path.dirname(__file__))
@@ -14,9 +15,13 @@ if os.path.exists(readme_path):
     with open(readme_path, 'r', encoding='utf-8') as f:
         long_description = f.read()
 
+init_path = os.path.join(here, 'xlbricks', '__init__.py')
+with open(init_path, 'r', encoding='utf-8') as f:
+    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]+)[\'"]', f.read(), re.M).group(1)
+
 setup(
     name='xlbricks',
-    version='0.1.0',
+    version=version,
     author='julij.jegorov',
     author_email='julij.jegorov@gmail.com',
     description='Excel-integrated brick structures and User Defined Functions (UDFs)',

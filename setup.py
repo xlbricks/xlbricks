@@ -39,7 +39,7 @@ setup(
     python_requires='>=3.11',
     install_requires=[
         'numpy>=1.23.0',
-        'pandas>=1.5.0',
+        'pandas>=2.2.1',
         'xlwings==0.33.20',
         'PyQt5>=5.15.0',
         'QuantLib-Python>=1.18',

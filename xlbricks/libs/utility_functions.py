@@ -68,7 +68,9 @@ class XLUtils(object):
         bricks_front = XLUtils.get_bricks_front(data)
         if bricks_front is None:
             if data.dtype.type is np.str_:
-                data = pd.DataFrame(data).apply(pd.to_numeric, errors='ignore').values
+                df = pd.DataFrame(data)
+                numeric = df.apply(pd.to_numeric, errors='coerce')
+                data = numeric.where(numeric.notna(), df).values
             return XLBrick(None, data)
         else:
             delete_bricks_from_front_stack(bricks_front)

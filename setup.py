@@ -18,11 +18,11 @@ setup(
     name='xlbricks',
     version='0.1.0',
     author='julij.jegorov',
-    author_email='',
+    author_email='julij.jegorov@gmail.com',
     description='Excel-integrated brick structures and User Defined Functions (UDFs)',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='',
+    url='https://github.com/xlbricks/xlbricks',
     packages=find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -40,7 +40,7 @@ setup(
     install_requires=[
         'numpy>=1.23.0',
         'pandas>=1.5.0',
-        'xlwings==0.33.2',
+        'xlwings==0.33.20',
         'PyQt5>=5.15.0',
         'QuantLib-Python>=1.18',
     ],
@@ -64,7 +64,8 @@ setup(
     include_package_data=True,
     keywords='excel xlwings udf quantlib finance pyqt5',
     project_urls={
-        'Bug Reports': '',
-        'Source': '',
+        'Bug Reports': 'https://github.com/xlbricks/xlbricks/issues',
+        'Source': 'https://github.com/xlbricks/xlbricks',
+        'Documentation': 'https://github.com/xlbricks/xlbricks#readme',
     },
 )
